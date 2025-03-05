@@ -1,0 +1,12 @@
+﻿@using System.Globalization
+@using OrchardCore.ContentLocalization.ViewModels
+@using OrchardCore.Localization
+@inject ILocalizationService localizationService
+
+@{
+    List<string> cultures = (await localizationService.GetSupportedCulturesAsync()).ToList();
+    List<CultureInfo> cultureInfos = new List<CultureInfo>();
+    cultures.ForEach(c => cultureInfos.Add(CultureInfo.GetCultureInfo(c)));
+    CultureInfo currentCulture = CultureInfo.GetCultureInfo(Orchard.CultureName());
+}
+<shape Type="ContentCulturePicker" prop-SupportedCultures=cultureInfos prop-CurrentCulture=currentCulture></shape>
