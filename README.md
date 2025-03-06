@@ -12,7 +12,7 @@ If you just want to use a theme but you don't want to edit any templates than th
 ## How to use
 
 1. Install `M96.ContentLocalization.ContentCulturePickerWidget` package from NuGet or clone this repo and add project reference to Orchard Core CMS project in your solution.
-2. Go to Orchard Core Admin panel, then go to `Configuration -> Settings -> Features` and enable `M96.ContentLocalization.ContentCulturePickerWidget`.
+2. Go to Orchard Core Admin panel, then go to `Configuration -> Features` and enable `M96.ContentLocalization.ContentCulturePickerWidget`.
 3. Now you can add this widget just like any other Orchard Core widget.
 
 ## Tips
