@@ -7,11 +7,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<PackageId>M96.ContentLocalization.ContentCulturePickerWidget</PackageId>
 	<Version>1.1.0</Version>
-	<Author>Miloš Jovanović - M96</Author>
+	<Authors>Miloš Jovanović - M96</Authors>
 	<Product>Content Culture Picker Widget for Orchard Core</Product>
 	<Description>Provides a widget that renders the culture picker shape from OrchardCore.ContentLocalization.ContentCulturePicker.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
+	<ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+        <None Include="LICENSE.txt" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+	
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
