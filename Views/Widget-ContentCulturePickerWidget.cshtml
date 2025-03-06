@@ -1,4 +1,5 @@
 ﻿@using System.Globalization
+@using M96.ContentLocalization.ContentCulturePickerWidget.Models
 @using OrchardCore.ContentLocalization.ViewModels
 @using OrchardCore.Localization
 @inject ILocalizationService localizationService
@@ -8,5 +9,10 @@
     List<CultureInfo> cultureInfos = new List<CultureInfo>();
     cultures.ForEach(c => cultureInfos.Add(CultureInfo.GetCultureInfo(c)));
     CultureInfo currentCulture = CultureInfo.GetCultureInfo(Orchard.CultureName());
+
+    ContentCulturePickerWidgetPart part = ((ContentItem)Model.ContentItem).As<ContentCulturePickerWidgetPart>();
 }
-<shape Type="ContentCulturePicker" prop-SupportedCultures=cultureInfos prop-CurrentCulture=currentCulture></shape>
+
+<div class="contentCulturePickerWidget@(part != null ? " " + part.WrapperCssClasses.Text : "")">
+    <shape Type="ContentCulturePicker" prop-SupportedCultures=cultureInfos prop-CurrentCulture=currentCulture></shape>
+</div>

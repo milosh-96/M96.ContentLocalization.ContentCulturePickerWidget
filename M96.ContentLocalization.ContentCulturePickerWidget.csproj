@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 	<PackageId>M96.ContentLocalization.ContentCulturePickerWidget</PackageId>
-	<Version>1.0.0</Version>
+	<Version>1.1.0</Version>
 	<Author>Miloš Jovanović - M96</Author>
 	<Product>Content Culture Picker Widget for Orchard Core</Product>
 	<Description>Provides a widget that renders the culture picker shape from OrchardCore.ContentLocalization.ContentCulturePicker.</Description>
@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="OrchardCore.ContentFields" Version="2.1.6" />
     <PackageReference Include="OrchardCore.ContentLocalization" Version="2.1.6" />
     <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.6" />
     <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.6" />
