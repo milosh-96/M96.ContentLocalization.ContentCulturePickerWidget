@@ -15,6 +15,8 @@ If you just want to use a theme but you don't want to edit any templates than th
 2. Go to Orchard Core Admin panel, then go to `Configuration -> Features` and enable `M96.ContentLocalization.ContentCulturePickerWidget`.
 3. Now you can add this widget just like any other Orchard Core widget.
 
+You can also configure wrapper CSS classes for each widget so you can apply custom styling.
+
 ## Tips
 
 Make sure you have configured cultures in `Configuration -> Settings -> Localization ->  Cultures`.
