@@ -13,6 +13,6 @@
     ContentCulturePickerWidgetPart part = ((ContentItem)Model.ContentItem).As<ContentCulturePickerWidgetPart>();
 }
 
-<div class="contentCulturePickerWidget@(part != null ? " " + part.WrapperCssClasses.Text : "")">
+<div class="contentCulturePickerWidget@(part != null && part.WrapperCssClasses != null ? " " + part.WrapperCssClasses.Text : "")">
     <shape Type="ContentCulturePicker" prop-SupportedCultures=cultureInfos prop-CurrentCulture=currentCulture></shape>
 </div>
