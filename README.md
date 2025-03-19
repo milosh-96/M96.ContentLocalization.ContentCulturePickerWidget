@@ -19,4 +19,4 @@ You can also configure wrapper CSS classes for each widget so you can apply cust
 
 ## Tips
 
-Make sure you have configured cultures in `Configuration -> Settings -> Localization ->  Cultures`.
+Make sure you have configured cultures in `Configuration -> Settings -> Localization -> Cultures`.
