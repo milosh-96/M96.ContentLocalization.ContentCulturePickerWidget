@@ -4,7 +4,7 @@
 Orchard Core provides a shape that renders languages/cultures dropdown. However, you need
 to modify your theme files to display it and also add some other configuration.  
 
-This widget will do all of that and you can then add it wherever you like - theme zones, flow part, bag part... 
+This widget will do all of that and you can then add it wherever you like - theme zones, flow part or anywhere else where widgets can be placed. 
 
 ## Why
 If you just want to use a theme but you don't want to edit any templates than this is more than useful. Also, sometimes it's just easier to have a widget that can be moved around.
