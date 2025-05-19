@@ -40,7 +40,7 @@ public class ContentCulturePickerWidgetMigrations : DataMigration
         await _contentDefinitionManager.AlterTypeDefinitionAsync(ContentTypes.ContentCulturePickerWidget, type => {
             type.Stereotype("Widget");
         });
-        return 1;
+        return 2;
     }
 
     public async Task<int> UpdateFrom1Async()
